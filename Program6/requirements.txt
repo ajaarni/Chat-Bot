@@ -1,0 +1,4 @@
+lxml
+textblob
+requests
+beautifulsoup4

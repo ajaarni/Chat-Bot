@@ -1,0 +1,26 @@
+***********************************
+Anton Aarnink
+CSCE 240
+Program 5 Write Up & Instructions
+***********************************
+
+__ Before you run: __
+    1. Be sure to install all requirements located in the file "requirements.txt"
+    2. Run the program out of the "main.py" file
+
+*** Keep in mind that the file paths are based off of you current working directory ***
+
+This program takes in a user query and then matches elements of that query to known facts about the representative in
+question. This then returns these facts and asks again what the user want to know. This is repeated until the quit
+case is meet, that being "q","quit", or "exit". A history of the information received in this session as well as time
+elapsed are located in the "stats.txt" file.
+
+**Accepted keywords to user are as follows:**
+    personal_info_list = ["info", "about", "from"]
+    phone_info_list = ["phone", "number", "contact"]
+    name_list = ["name", "full name", "last name", "who"]
+    committee_list = ["committee"]
+    service_list = ["service", "record", "long", "served"]
+    address_list = ["live", "where", "address"]
+    quit_cases = ["q", "quit", "exit", "bye", "goodbye"]
+    all_list = ["everything", "all"]
