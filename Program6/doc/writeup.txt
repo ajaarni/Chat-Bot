@@ -4,6 +4,8 @@ CSCE 240
 Program 5 Write Up & Instructions
 ***********************************
 
+***** THE VIDEO DEMO HAS BEEN SHARED TO YOUR EMAILS (Program6Video.mov) ******
+
 __ Before you run: __
     1. Be sure to install all requirements located in the file "requirements.txt"
     2. Run the program out of the "main.py" file
