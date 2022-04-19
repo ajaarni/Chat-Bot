@@ -15,24 +15,10 @@ def WebScraper():
         file2.truncate(0)
 
         url = "https://www.scstatehouse.gov/member.php?code=351704504"
-        # url2 = "https://www.scstatehouse.gov/sponsorsearch.php"
+
         page = requests.get(url)
-        # page2 = requests.get(url2)
 
         soup = BeautifulSoup(page.content, 'lxml')
-        # soup2 = BeautifulSoup(page2.content, 'lxml')
-
-        # data = []
-        # table = soup2.find_all('table', style="text-align:right")
-        # table_body = table.find('tbody')
-        #
-        # rows = table_body.find_all('tr')
-        # for row in rows:
-        #     cols = row.find_all('td')
-        #     cols = [ele.text.strip() for ele in cols]
-        #     data.append([ele for ele in cols if ele])  # Get rid of empty values
-
-        # results = soup.find_all(id="contentsection", text=True)
 
         name = soup.find("h2", class_="barheader").get_text().strip()
 
@@ -50,20 +36,13 @@ def WebScraper():
             dat.decompose()
 
         for data in soup.find_all("p"):
-            # print(data.get_text())
-
             file.write(data.get_text(separator='\n').strip() + '- \n')
 
         for data2 in soup.find_all("li"):
             line = "{0}: {1}".format(data2.name, data2.text)
             if line != "*Search Session*":
                 file.write("{0}: {1}".format(data2.name, data2.text) + '\n')
-        # print(data2.get_text())
 
-        # file.write(data2.get_text(separator='\n').strip() + '- \n')
-
-        # print(map)
-        # print(data)
         file.close()
         page.close()
         end = time.time()
