@@ -1,3 +1,3 @@
 # Chat-Bot
 SC Representative Chat Bot  
-https://emailsc-my.sharepoint.com/:v:/g/personal/aaarnink_email_sc_edu/ESfNVG1feRJJq_kpq6TJEkYBqKH4LTrTBjF7CbGXOyKGjQ?e=6gQOQW 
+https://drive.google.com/file/d/15ReRVJl3KLc0JyNKXsWbNhvlix0_7WN4/view?usp=sharing
